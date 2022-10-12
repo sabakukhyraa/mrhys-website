@@ -1,0 +1,19 @@
+{
+  "name": "mrhys-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "watch": "npx tailwindcss -i src/css/main.css -o dist/output.css --watch"
+  },
+  "author": "Ali Kerem Ata",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
