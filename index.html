@@ -20,13 +20,17 @@
 
 <body>
   
-<div class="h-[100vh] flex items-center">
-  <div class="container">
-    <div class="flex flex-col items-center space-y-8 text-5xl">
-      <h1 class="text-3xl">Please select your preferred language:</h1>
-      <div class="space-x-12">
-        <a href="">TR</a>
-        <a href="">EN</a>
+<div class="h-[100vh] bg-amber-100 flex items-center">
+  <div class="container lg:px-60">
+    <div class="flex flex-col items-center py-6 text-white shadow-2xl gap-y-8 rounded-2xl bg-amber-500">
+      <h1 class="text-4xl text-center md:text-5xl">Please select your preferred language:</h1>
+      <div class="flex flex-col w-full px-4 text-3xl md:text-2xl md:w-auto md:flex-row md:gap-x-12 gap-y-3">
+        <a class="text-center" href="src/pages/tr/ana-sayfa.html">
+          <button class="base-button">Türkçe</button>
+        </a>
+        <a class="text-center" href="src/pages/en/home-page.html">
+          <button class="base-button">English</button>
+        </a>
       </div>
     </div>
   </div>
