@@ -6,4 +6,12 @@
   * {
     font-family: 'Poppins';
   }
+
+  a, button, h1, h2, h6 {
+    text-align: center;
+  }
+
+  .base-button {
+    @apply px-6 py-3 text-center w-full transition-all duration-300 ease-in-out rounded-xl bg-amber-700 hover:scale-105 hover:bg-amber-100 hover:text-amber-600
+  }
 }
