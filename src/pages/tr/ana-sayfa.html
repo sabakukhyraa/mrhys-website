@@ -7,12 +7,73 @@
 
   <title>Ana Sayfa</title>
 
-  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="../../../dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome ikonlar-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+
+
+<body class="bg-amber-100">
+
+  <header class="h-auto md:h-32 bg-amber-500 shadow-xl sticky top-0">
+    <div class="container">
+      <nav class="w-full md:flex md:items-center md:justify-between text-amber-50 text-xl">
+        <div class="flex items-center justify-between">
+          <ul class="mt-9 md:mt-1 ml-3 md:ml-0">
+            <li><a href="#">LOGO</a></li>
+          </ul>
+
+          <span class="text-4xl cursor-pointer md:hidden visible mt-9 md:mt-1 mr-3 md:mr-0">
+            <i class="fa-solid fa-bars" onclick="menuToggle();"></i>
+          </span> 
+        </div>
+
+        <ul class="py-6 md:py-16 md:flex md:items-center md:justify-between text-left z-[-1] md:z-auto transition-all ease-in duration-500" id="menuItems">
+          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out first-line:text-amber-700 first-line:text-2xl"><a href="#">Ana Sayfa</a></li>
+          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="#">Ürünlerimiz</a></li>
+          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="../tr/hakkımızda.html">Hakkımızda</a></li>
+          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="#">İletişim</a></li>
+
+          <li class="space-x-2 pl-4 md:pl-0">
+            <a class="base-button py-2 shadow-5xl" href="ana-sayfa.html">
+              <button>TR</button>
+            </a>
+            <a class="base-button py-2 shadow-5xl" href="home-page.html">
+              <button>EN</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   
+  <!--navbarın sticky olduğunu kontrol etmek için (silinecek)-->
+  <div class="mt-96 text-center space-y-12">
+    <div class="container mb-20">
+      <h1 class="text-5xl">Welcome to my website!</h1> <br> <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error, neque voluptatibus exercitationem suscipit facere ex labore corrupti asperiores ut. Excepturi, quisquam minima dolor maxime quae deleniti totam tempora consectetur?</p> <br> <br>
+    </div>
+  </div>
+  
+
+  <script>
+    var menuItems=document.getElementById('menuItems');
+    menuItems.style.maxHeight="0px";
+
+    function menuToggle(){
+      if(menuItems.style.maxHeight=="0px"){
+        menuItems.style.maxHeight="400px";
+      }
+      else{
+        menuItems.style.maxHeight="0px"; 
+      }
+    }
+  </script>     
+
+
 </body>
 </html>
