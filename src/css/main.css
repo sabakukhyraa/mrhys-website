@@ -14,4 +14,20 @@
   .base-button {
     @apply px-6 py-3 text-center w-full transition-all duration-300 ease-in-out rounded-xl bg-amber-700 hover:scale-105 hover:bg-amber-100 hover:text-amber-600
   }
+
+  .animation {
+    @apply transition-all duration-300 ease-in-out
+  }
+
+  .list-item {
+    @apply animation text-xl text-amber-50 cursor-pointer hover:text-amber-700 hover:text-2xl whitespace-nowrap
+  }
+
+  .active-list-item {
+    @apply animation text-2xl text-amber-700 
+  }
+
+  .active-navbar {
+    @apply top-0 opacity-100 !important
+  }
 }
