@@ -1,79 +1,86 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Ana Sayfa</title>
 
   <link rel="stylesheet" href="../../../dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome ikonlar-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 
-<body class="bg-amber-100">
+<body>
 
-  <header class="sticky top-0 h-auto shadow-xl md:h-32 bg-amber-500">
-    <div class="container">
-      <nav class="w-full text-xl md:flex md:items-center md:justify-between text-amber-50">
-        <div class="flex items-center justify-between">
-          <ul class="ml-3 mt-9 md:mt-1 md:ml-0">
-            <li><a href="#"><img src="" alt="LOGO"></a></li>
-          </ul>
+  <header class="flex items-center justify-between w-full md:justify-around bg-amber-500">
+    
+    <a href="./ana-sayfa.html">
+      <img class="w-56 h-auto md:w-64" src="../../images/cover.png" alt="MRHYS Logo">
+    </a>
 
-          <span class="visible mr-3 text-4xl cursor-pointer md:hidden mt-9 md:mt-1 md:mr-0">
-            <i class="fa-solid fa-bars" onclick="menuToggle();"></i>
-          </span> 
-        </div>
+    <nav>
+      <ul class="hidden gap-10 md:flex">
+        <li class="list-item active-list-item"><a href=""></a>Ana Sayfa</li>
+        <li class="list-item"><a href=""></a>Ürünler</li>
+        <li class="list-item"><a href=""></a>Hakkımızda</li>
+        <li class="list-item"><a href=""></a>İletişim</li>
+      </ul>
+    </nav>
 
-        <ul class="py-6 md:py-16 md:flex md:items-center md:justify-between text-left z-[-1] md:z-auto animation" id="menuItems">
-          <li class="mx-5 my-5 md:my-0 first-line:text-amber-700 first-line:text-2xl"><a href="#">Ana Sayfa</a></li>
-          <li class="mx-5 my-5 md:my-0 hover:text-amber-700"><a href="#">Ürünlerimiz</a></li>
-          <li class="mx-5 my-5 md:my-0 hover:text-amber-700"><a href="../tr/hakkımızda.html">Hakkımızda</a></li>
-          <li class="mx-5 my-5 md:my-0 hover:text-amber-700"><a href="#">İletişim</a></li>
-
-          <!-- <li class="pl-4 space-x-2 md:pl-0">
-            <a class="py-2 base-button shadow-5xl" href="ana-sayfa.html">
-              <button>TR</button>
-            </a>
-            <a class="py-2 base-button shadow-5xl" href="home-page.html">
-              <button>EN</button>
-            </a>
-          </li> -->
-        </ul>
-      </nav>
-    </div>
+    <button onclick="toggleNavbar()" class="inline-block mr-8 sm:mr-16 md:hidden">
+      <svg width="28" height="28" class=" fill-amber-700" viewBox="0 0 20 20">
+        <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+      </svg>
+    </button>
   </header>
 
-  
-  <!--navbarın sticky olduğunu kontrol etmek için (silinecek)-->
+
+  <main class="relative -z-20">
+    <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500">
+      <ul class="flex flex-col items-center w-full gap-8">
+        <li class="list-item active-list-item"><a href=""></a>Ana Sayfa</li>
+        <li class="list-item"><a href=""></a>Ürünler</li>
+        <li class="list-item"><a href=""></a>Hakkımızda</li>
+        <li class="list-item"><a href=""></a>İletişim</li>
+      </ul>
+    </nav>
+  </main>
+
+     
+  <!--butonların scrollda nasıl göründüğünü test etmek için! (silinecek)-->
   <div class="space-y-12 text-center mt-96">
     <div class="container mb-20">
-      <h1 class="text-5xl">Welcome to my website!</h1> <br> <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error, neque voluptatibus exercitationem suscipit facere ex labore corrupti asperiores ut. Excepturi, quisquam minima dolor maxime quae deleniti totam tempora consectetur?</p> <br> <br>
+      <h1 class="text-7xl">Welcome to my website!</h1> <br> <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error, neque voluptatibus exercitationem suscipit facere ex labore corrupti asperiores ut. Excepturi, quisquam minima dolor maxime quae deleniti totam tempora consectetur?</p> <br> <br>
     </div>
   </div>
   
 
+  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8">
+    <div class="space-x-2 text-amber-50 text-lg">
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="ana-sayfa.html">
+        <button>TR</button>
+      </a>
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="../en/home-page.html">
+        <button>EN</button>
+      </a>
+    </div>
+  </section>
+
+
   <script>
-    var menuItems=document.getElementById('menuItems');
-    menuItems.style.maxHeight="0px";
-
-    function menuToggle(){
-      if(menuItems.style.maxHeight=="0px"){
-        menuItems.style.maxHeight="400px";
-      }
-      else{
-        menuItems.style.maxHeight="0px"; 
-      }
+    const responsiveNavbar = document.getElementById('mobile-navbar')
+    
+    function toggleNavbar() {
+      responsiveNavbar.classList.toggle("active-navbar")
     }
-  </script>     
-
+  </script>
+  
 
 </body>
 </html>

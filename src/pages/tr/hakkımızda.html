@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Hakkımızda</title>
 
   <link rel="stylesheet" href="../../../dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 </head>
+
+
 <body>
 
-  <header class="w-full h-auto md:h-32 shadow-xl bg-amber-500 sticky top-0">
-    <div class="container">
-      <nav class="md:flex md:items-center md:justify-between text-amber-50 text-xl">
+  <header class="flex items-center justify-between w-full md:justify-around bg-amber-500">
+    
+    <a href="./ana-sayfa.html">
+      <img class="w-56 h-auto md:w-64" src="../../images/cover.png" alt="MRHYS Logo">
+    </a>
 
-        <div>
-          <ul>
-            <li><a class="md:mt-10" href="#">LOGO</a></li>
-          </ul>
-        </div>
-        
-        <ul class="py-6 md:py-12 md:flex md:items-center md:justify-between text-left z-[-1] md:z-auto">
-          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="../tr/ana-sayfa.html">Ana Sayfa</a></li>
-          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="#">Ürünlerimiz</a></li>
-          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out first-line:text-amber-700 first-line:text-2xl hover:text-amber-700 hover:text-2xl"><a href="#">Hakkımızda</a></li>
-          <li class="mx-5 my-5 md:my-0 transition-all duration-300 ease-in-out hover:text-amber-700 hover:text-2xl"><a href="#">İletişim</a></li>
+    <nav>
+      <ul class="hidden gap-10 md:flex">
+        <li class="list-item"><a href=""></a>Ana Sayfa</li>
+        <li class="list-item"><a href=""></a>Ürünler</li>
+        <li class="list-item active-list-item"><a href=""></a>Hakkımızda</li>
+        <li class="list-item"><a href=""></a>İletişim</li>
+      </ul>
+    </nav>
 
-          <li class="space-x-2 pl-4 md:pl-0">
-            <a class="base-button py-2 shadow-5xl" href="ana-sayfa.html">
-              <button>TR</button>
-            </a>
-            <a class="base-button py-2 shadow-5xl" href="home-page.html">
-              <button>EN</button>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <button onclick="toggleNavbar()" class="inline-block mr-8 sm:mr-16 md:hidden">
+      <svg width="28" height="28" class=" fill-amber-700" viewBox="0 0 20 20">
+        <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+      </svg>
+    </button>
   </header>
+
+
+  <main class="relative -z-20">
+    <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500">
+      <ul class="flex flex-col items-center w-full gap-8">
+        <li class="list-item"><a href=""></a>Ana Sayfa</li>
+        <li class="list-item"><a href=""></a>Ürünler</li>
+        <li class="list-item active-list-item"><a href=""></a>Hakkımızda</li>
+        <li class="list-item"><a href=""></a>İletişim</li>
+      </ul>
+    </nav>
+  </main>
+
   
+  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8">
+    <div class="space-x-2 text-amber-50 text-lg">
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="ana-sayfa.html">
+        <button>TR</button>
+      </a>
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="../en/home-page.html">
+        <button>EN</button>
+      </a>
+    </div>
+  </section>
+
+
+  <script>
+    const responsiveNavbar = document.getElementById('mobile-navbar')
+    
+    function toggleNavbar() {
+      responsiveNavbar.classList.toggle("active-navbar")
+    }
+  </script>
+  
+
 </body>
 </html>
