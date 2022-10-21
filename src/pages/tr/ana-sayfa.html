@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="../../../dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome ikonlar-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 
-<body>
+<body class="bg-amber-100">
 
   <header class="flex items-center justify-between w-full md:justify-around bg-amber-500">
     
@@ -51,36 +52,65 @@
   </main>
 
      
-  <!--butonların scrollda nasıl göründüğünü test etmek için! (silinecek)-->
-  <div class="space-y-12 text-center mt-96">
-    <div class="container mb-20">
+  <!--yeni sectionların scrollda nasıl göründüğünü test etmek için! (silinecek)-->
+  <div class="space-y-12 text-center mt-80">
+    <div class="container mb-40">
       <h1 class="text-7xl">Welcome to my website!</h1> <br> <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
+      <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. <br> Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modiLorem ipsum <br> <br> dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modi dolorum libero et ex animi esse ratione laborum deserunt suscipit sequi illum aliquid cum labore atque debitis? Soluta sit dignissimos quos quaerat aspernatur non in temporibus, libero ipsam, incidunt, vero ea? Eos provident harum rem quo illum.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error, neque voluptatibus exercitationem suscipit facere ex labore corrupti asperiores ut. Excepturi, quisquam minima dolor maxime quae deleniti totam tempora consectetur?</p> <br> <br>
     </div>
   </div>
   
 
-  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8">
+  <!-- TR - EN butonları -->
+  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 transition-all duration-300 ease-in-out">
     <div class="space-x-2 text-amber-50 text-lg">
-      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="ana-sayfa.html">
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="ana-sayfa.html">
         <button>TR</button>
       </a>
-      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl" href="../en/home-page.html">
+      <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="../en/home-page.html">
         <button>EN</button>
       </a>
     </div>
   </section>
 
 
+  <!--
+    popup responsive de navbar ile çakışıyor z index le çözülebilecek bir problem;
+    ama navbara dokunmamak için değiştirmedim! 
+  -->
+  <!-- cookie consent pop up -->
+  <section class="fixed bottom-20 right-9 md:bottom-8 md:rigth-8 w-60 md:w-80" id="cookiePopup">
+    <div class="rounded-2xl bg-amber-50 text-center">
+
+      <div class="space-y-6 py-4 md:py-6 px-4 md:px-6 text-slate-600">
+        <i class="fa-solid fa-cookie-bite animate-bounce text-2xl md:text-4xl text-amber-500"></i>
+        <header class="text-lg md:text-xl text-slate-900">Çerez Onayı</header>
+        <p class="text-sm md:text-base">Bu web sitesi, web sitemizde en iyi deneyimi yaşamanızı sağlamak için çerezleri kullanır.</p>
+
+        <div class="buttons space-x-3 md:space-x-6">
+          <a class="base-button py-2 px-4 text-amber-50 hover:bg-amber-500 hover:text-amber-50 shadow-5xl" href="#" onclick="acceptCookie();"><button>Anladım</button></a>
+          <a class="text-amber-500 underline hover:text-amber-700 text-md md:text-lg" id="item" href="https://support.google.com/chrome/answer/95647?hl=tr&co=GENIE.Platform%3DDesktop" target="new_blank">Daha Fazla</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <script>
     const responsiveNavbar = document.getElementById('mobile-navbar')
-    
     function toggleNavbar() {
       responsiveNavbar.classList.toggle("active-navbar")
     }
+
+
+    const accept = document.getElementById("cookiePopup")
+    function acceptCookie() {
+      accept.classList.add("hidden")
+    }
   </script>
-  
+
 
 </body>
 </html>
