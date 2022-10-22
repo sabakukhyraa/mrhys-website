@@ -24,14 +24,40 @@
     </a>
 
     <nav>
-      <ul class="hidden gap-10 md:flex">
-        <li class="list-item active-list-item"><a href=""></a>Ana Sayfa</li>
-        <li class="list-item"><a href=""></a>Ürünler</li>
-        <li class="list-item"><a href=""></a>Hakkımızda</li>
-        <li class="list-item"><a href=""></a>İletişim</li>
+      <ul class="md:visible hidden md:flex gap-14 justify-center">
+        <li class="list-item active-list-item">
+          <a href="./ana-sayfa.html">Ana Sayfa</a>
+        </li>
+
+        <li class="group list-item relative">
+          <a href="#">Ürünler</a>
+          
+          <ul class="hidden group-hover:block z-0 hover:z-50 absolute px-6 py-3 bg-amber-700 rigth-0 rounded-xl text-amber-50 text-start space-y-3">
+            <li class="hover:underline">
+              <a href="#">Erkek</a>
+            </li>
+
+            <li class="hover:underline">
+              <a href="#">Kadın</a>
+            </li>
+
+            <li class="hover:underline">
+              <a href="#">Çocuk</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list-item">
+          <a href="./hakkımızda.html">Hakkımızda</a>
+        </li>
+
+        <li class="list-item">
+          <a href="#">İletişim</a>
+        </li>
       </ul>
     </nav>
 
+    <!-- menu toggle -->
     <button onclick="toggleNavbar()" class="inline-block mr-8 sm:mr-16 md:hidden">
       <svg width="28" height="28" class=" fill-amber-700" viewBox="0 0 20 20">
         <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
@@ -39,32 +65,47 @@
     </button>
   </header>
 
-
+    
+  <!-- responsive navbar -->
   <main class="relative -z-20">
     <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500">
       <ul class="flex flex-col items-center w-full gap-8">
-        <li class="list-item active-list-item"><a href=""></a>Ana Sayfa</li>
-        <li class="list-item"><a href=""></a>Ürünler</li>
-        <li class="list-item"><a href=""></a>Hakkımızda</li>
-        <li class="list-item"><a href=""></a>İletişim</li>
+        <li class="list-item active-list-item">
+          <a href="">Ana Sayfa</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Ürünler</a>
+          
+          <div class="dropdown">
+            <ul class="text-center">
+              <li>
+                <a href="#">Erkek</a>
+              </li>
+
+              <li>
+                <a href="#">Kadın</a>
+              </li>
+
+              <li>
+                <a href="#">Çocuk</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="">Hakkımızda</a>
+        </li>
+        <li class="list-item">
+          <a href="">İletişim</a>
+        </li>
       </ul>
     </nav>
-  </main>
+  </main> 
 
      
-  <!--yeni sectionların scrollda nasıl göründüğünü test etmek için! (silinecek)-->
-  <div class="space-y-12 text-center mt-80">
-    <div class="container mb-40">
-      <h1 class="text-7xl">Welcome to my website!</h1> <br> <br>
-      <p> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae odit temporibus? Recusandae accusamus est nobis, quibusdam perspiciatis numquam, obcaecati soluta ipsam enim voluptas aut deserunt aperiam architecto praesentium suscipit.</p> <br> <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. <br> Odio voluptate, similique sint modiLorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modiLorem ipsum <br> <br> dolor sit amet consectetur adipisicing elit. Odio voluptate, similique sint modi dolorum libero et ex animi esse ratione laborum deserunt suscipit sequi illum aliquid cum labore atque debitis? Soluta sit dignissimos quos quaerat aspernatur non in temporibus, libero ipsam, incidunt, vero ea? Eos provident harum rem quo illum.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error, neque voluptatibus exercitationem suscipit facere ex labore corrupti asperiores ut. Excepturi, quisquam minima dolor maxime quae deleniti totam tempora consectetur?</p> <br> <br>
-    </div>
-  </div>
-  
 
   <!-- TR - EN butonları -->
-  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 transition-all duration-300 ease-in-out">
+  <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 animation">
     <div class="space-x-2 text-amber-50 text-lg">
       <a class="base-button py-2 md:py-3 px-5 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="ana-sayfa.html">
         <button>TR</button>
@@ -76,40 +117,14 @@
   </section>
 
 
-  <!--
-    popup responsive de navbar ile çakışıyor z index le çözülebilecek bir problem;
-    ama navbara dokunmamak için değiştirmedim! 
-  -->
-  <!-- cookie consent pop up -->
-  <section class="fixed bottom-20 right-9 md:bottom-8 md:rigth-8 w-60 md:w-80" id="cookiePopup">
-    <div class="rounded-2xl bg-amber-50 text-center">
-
-      <div class="space-y-6 py-4 md:py-6 px-4 md:px-6 text-slate-600">
-        <i class="fa-solid fa-cookie-bite animate-bounce text-2xl md:text-4xl text-amber-500"></i>
-        <header class="text-lg md:text-xl text-slate-900">Çerez Onayı</header>
-        <p class="text-sm md:text-base">Bu web sitesi, web sitemizde en iyi deneyimi yaşamanızı sağlamak için çerezleri kullanır.</p>
-
-        <div class="buttons space-x-3 md:space-x-6">
-          <a class="base-button py-2 px-4 text-amber-50 hover:bg-amber-500 hover:text-amber-50 shadow-5xl" href="#" onclick="acceptCookie();"><button>Anladım</button></a>
-          <a class="text-amber-500 underline hover:text-amber-700 text-md md:text-lg" id="item" href="https://support.google.com/chrome/answer/95647?hl=tr&co=GENIE.Platform%3DDesktop" target="new_blank">Daha Fazla</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <script>
     const responsiveNavbar = document.getElementById('mobile-navbar')
     function toggleNavbar() {
       responsiveNavbar.classList.toggle("active-navbar")
     }
+  </script>  
 
-
-    const accept = document.getElementById("cookiePopup")
-    function acceptCookie() {
-      accept.classList.add("hidden")
-    }
-  </script>
 
 
 </body>
