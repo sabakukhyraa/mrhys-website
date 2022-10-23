@@ -28,7 +28,7 @@
   }
 
   .list-item {
-    @apply animation text-xl text-amber-50 cursor-pointer hover:active-list-item
+    @apply animation text-xl text-amber-50 cursor-pointer hover:active-list-item whitespace-nowrap
   }
 
   .mobile-list-item {
@@ -59,4 +59,7 @@
     @apply top-0 opacity-100 !important
   }
   
+  .arrow-animation {
+    @apply rotate-180 fill-amber-700 !important
+  }
 }

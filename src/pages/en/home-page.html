@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="../../../dist/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome icons-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 
 </head>
 
-<body>
 
+<body>
 
   <header class="flex items-center justify-between w-full shadow-lg md:justify-around bg-amber-500">
     
@@ -27,14 +27,15 @@
     
 
     <nav>
-      <ul class="hidden gap-10 md:flex">
+      <ul class="hidden gap-12 md:flex">
         <li class="list-item active-list-item"><a href="">Home</a></li>
-        <li onmouseover="dropdownHover()" onmouseout="dropdownHoverOut()" class="relative list-item">
-          <a href="">Products</a>
-          <ul id="dropdown" class="absolute flex flex-col items-start w-full gap-2 p-3 pt-4 rounded-lg shadow-xl opacity-0 -top-12 -z-10 bg-amber-500 animation">
-            <li class="dropdown-item"><a href="../../../index.html">Man</a></li>
-            <li class="dropdown-item"><a href="">Woman</a></li>
-            <li class="dropdown-item"><a href="">Kids</a></li>
+        <li class="relative group list-item">
+          <a href="#">Products</a>
+          
+          <ul class="absolute -top-4 group-hover:top-6 pr-10 pl-2 py-3 space-y-3 animation opacity-0 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 bg-amber-500 -left-2 rounded-xl !duration-700 shadow-2xl">
+            <li class="dropdown-item"><a  href="#">Man</a></li>
+            <li class="dropdown-item"><a href="#">Woman</a></li>
+            <li class="dropdown-item"><a href="#">Kids</a></li>
           </ul>
         </li>
         <li class="list-item"><a href="">About Us</a></li>
@@ -53,6 +54,7 @@
 
   <main class="relative -z-20">
 
+    <!-- responsive navbar -->
     <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500 md:hidden">
       <ul class="flex flex-col items-center w-full gap-8">
         <li class="mobile-list-item active-mobile-list-item"><a href="">Home</a></li>
@@ -64,7 +66,7 @@
             />
           </svg>
     
-          <ul id="mobile-dropdown" class="absolute pt-2 space-y-3 opacity-0 animation">
+          <ul id="mobile-dropdown" class="absolute mt-2 pl-2 space-y-3 opacity-0 animation border-t-[1px]">
             <li class="dropdown-item"><a href="">Man</a></li>
             <li class="dropdown-item"><a href="">Woman</a></li>
             <li class="dropdown-item"><a href="">Kids</a></li>
@@ -84,6 +86,19 @@
       </section>
     </div> -->
 
+    <!-- TR - EN buttons -->
+
+    <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 animation">
+      <div class="space-x-2 text-lg text-amber-50">
+        <a class="px-5 py-2 base-button md:py-3 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="../tr/ana-sayfa.html">
+          <button>TR</button>
+        </a>
+        <a class="px-5 py-2 base-button md:py-3 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="home-page.html">
+          <button>EN</button>
+        </a>
+      </div>
+    </section>
+
   </main>
   
   <script>
@@ -98,19 +113,11 @@
 
     function openDropdown() {
       mobileDropdown.classList.toggle("active-mobile-dropdown")
-      bottomArrow.classList.toggle("rotate-180")
+      bottomArrow.classList.toggle("arrow-animation")
     }
-
-    function dropdownHover() {
-      dropdown.classList.add("active-dropdown")
-    }
-
-    function dropdownHoverOut() {
-      dropdown.classList.remove("active-dropdown")
-    }
-  
   </script>
-  <script src="../../js/index.js"></script>
+
+  <script type="module" src="../../js/index.js"></script>
 
   
 </body>
