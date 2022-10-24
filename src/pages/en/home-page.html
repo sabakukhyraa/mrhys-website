@@ -19,7 +19,7 @@
 
 <body>
 
-  <header class="flex items-center justify-between w-full shadow-lg md:justify-around bg-amber-500">
+  <header class="z-10 flex items-center justify-between w-full shadow-lg md:justify-around bg-amber-500">
     
     <a class="animation hover:scale-105" href="./home-page.html">
       <img class="w-56 h-auto md:w-64" src="../../images/cover.png" alt="MRHYS Logo">
@@ -32,7 +32,7 @@
         <li class="relative group list-item">
           <a href="#">Products</a>
           
-          <ul class="absolute -top-4 group-hover:top-6 pr-10 pl-2 py-3 space-y-3 animation opacity-0 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 bg-amber-500 -left-2 rounded-xl !duration-700 shadow-2xl">
+          <ul class="absolute -top-4 group-hover:top-6 pr-10 pl-2 py-3 space-y-3 animation opacity-0 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 bg-amber-500 -left-2 rounded-xl !duration-700 shadow-2xl z-50">
             <li class="dropdown-item"><a  href="#">Man</a></li>
             <li class="dropdown-item"><a href="#">Woman</a></li>
             <li class="dropdown-item"><a href="#">Kids</a></li>
@@ -52,7 +52,7 @@
     
   </header>
 
-  <main class="relative -z-20">
+  <main class="relative">
 
     <!-- responsive navbar -->
     <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500 md:hidden">
@@ -77,15 +77,6 @@
       </ul>
     </nav>
 
-    
-    <!-- <div>
-      <section>
-        <div class="container">
-  
-        </div>
-      </section>
-    </div> -->
-
     <!-- TR - EN buttons -->
 
     <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 animation">
@@ -107,11 +98,12 @@
     function toggleNavbar() {
       responsiveNavbar.classList.toggle("active-navbar")
     }
-
+    
     function openDropdown() {
       mobileDropdown.classList.toggle("active-mobile-dropdown")
       bottomArrow.classList.toggle("arrow-animation")
     }
+
   </script>
 
   <!-- <script type="module" src="../../js/darkmode.js"></script> -->

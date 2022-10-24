@@ -19,14 +19,14 @@
 
 <body>
 
-  <header class="flex items-center justify-between w-full md:justify-around bg-amber-500">
+  <header class="z-10 flex items-center justify-between w-full shadow-lg md:justify-around bg-amber-500">
     
-    <a href="./ana-sayfa.html">
+    <a class="animation hover:scale-105" href="./ana-sayfa.html">
       <img class="w-56 h-auto md:w-64" src="../../images/cover.png" alt="MRHYS Logo">
     </a>
 
     <nav>
-      <ul class="justify-center hidden gap-12 md:flex">
+      <ul class="hidden gap-12 md:flex">
         <li class="list-item active-list-item">
           <a href="./ana-sayfa.html">Ana Sayfa</a>
         </li>
@@ -34,7 +34,7 @@
         <li class="relative group list-item">
           <a href="#">Ürünler</a>
           
-          <ul class="absolute -top-4 group-hover:top-6 pr-10 pl-2 py-3 space-y-3 animation opacity-0 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 bg-amber-500 -left-2 rounded-xl !duration-700 shadow-2xl">
+          <ul class="absolute -top-4 group-hover:top-6 pr-10 pl-2 py-3 space-y-3 animation opacity-0 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100 bg-amber-500 -left-2 rounded-xl !duration-700 shadow-2xl z-50">
             <li class="dropdown-item"><a  href="#">Erkek</a></li>
             <li class="dropdown-item"><a href="#">Kadın</a></li>
             <li class="dropdown-item"><a href="#">Çocuk</a></li>
@@ -61,7 +61,7 @@
   </header>
 
     
-  <main class="relative -z-20">
+  <main class="relative">
     
     <!-- responsive navbar -->
     <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500 md:hidden">
