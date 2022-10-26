@@ -15,6 +15,14 @@
     z-index: 500;
   }
 
+  h1, h2, h6 {
+    @apply text-amber-700    
+  }
+
+  h1 {
+    @apply text-5xl
+  }
+
   html {
     @apply text-amber-50 bg-amber-100
   }
@@ -44,7 +52,7 @@
   }
 
   .active-mobile-dropdown {
-    @apply static opacity-100 !important
+    @apply static pointer-events-auto opacity-100 !important
   }
 
   .active-list-item {
@@ -56,7 +64,7 @@
   }
 
   .active-navbar {
-    @apply top-0 opacity-100 !important
+    @apply top-0 pointer-events-auto opacity-100 !important
   }
   
   .arrow-animation {

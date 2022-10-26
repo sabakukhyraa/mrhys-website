@@ -27,7 +27,7 @@
     
 
     <nav>
-      <ul class="hidden gap-12 md:flex">
+      <ul class="hidden gap-14 md:flex">
         <li class="list-item active-list-item"><a href="">Home</a></li>
         <li class="relative group list-item">
           <a href="#">Products</a>
@@ -55,7 +55,7 @@
   <main class="relative">
 
     <!-- responsive navbar -->
-    <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 animation -top-40 bg-amber-500 md:hidden">
+    <nav id="mobile-navbar" class="absolute flex w-full py-6 opacity-0 pointer-events-none animation -top-40 bg-amber-500 md:hidden">
       <ul class="flex flex-col items-center w-full gap-8">
         <li class="mobile-list-item active-mobile-list-item"><a href="">Home</a></li>
         <li class="mobile-list-item" onclick="openDropdown()">
@@ -66,7 +66,7 @@
             />
           </svg>
     
-          <ul id="mobile-dropdown" class="absolute mt-2 pl-2 space-y-3 opacity-0 animation border-t-[1px]">
+          <ul id="mobile-dropdown" class="absolute mt-2 pl-2 space-y-3 opacity-0 animation border-t-[1px] pointer-events-none">
             <li class="dropdown-item"><a href="">Man</a></li>
             <li class="dropdown-item"><a href="">Woman</a></li>
             <li class="dropdown-item"><a href="">Kids</a></li>
@@ -77,14 +77,24 @@
       </ul>
     </nav>
 
-    <!-- TR - EN buttons -->
 
-    <section class="fixed bottom-7 left-4 md:bottom-8 md:left-8 animation">
-      <div class="space-x-2 text-lg text-amber-50">
-        <a class="px-5 py-2 base-button md:py-3 md:px-6 shadow-5xl hover:bg-amber-500 hover:text-amber-50" href="../tr/ana-sayfa.html">
-          <button>TR</button>
-        </a>
+
+    <!-- Contents -->
+
+
+    <section>
+      <div class="container">
+        <h1>En kaliteli ve uygun giysiler <strong>MRHYS.com</strong>'da!</h1>
       </div>
+    </section>
+
+
+    <!-- language button -->
+
+    <section class="fixed bottom-7 left-6 md:bottom-8 md:left-8">
+      <a class="px-4 py-2 rounded-xl md:text-lg text-md md:py-3 animation md:px-6 shadow-5xl bg-amber-700 hover:bg-amber-500" href="../tr/ana-sayfa.html">
+        TR
+      </a>
     </section>
 
   </main>
