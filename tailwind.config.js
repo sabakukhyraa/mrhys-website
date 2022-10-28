@@ -11,6 +11,8 @@ module.exports = {
       lg: "992px",
       xl: "1080px",
       "2xl": "1294px",
+      "3xl": "1921px",
+      "4xl": "2880px"
     },
     extend: {
       container: {
