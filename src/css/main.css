@@ -7,6 +7,10 @@
     font-family: 'Poppins';
   }
 
+  /* body > * {
+    width: 100vw;
+  } */
+
   a, button, h1, h2, h6 {
     text-align: center;
   }
@@ -21,6 +25,10 @@
 
   h1 {
     @apply text-5xl
+  }
+
+  h4 {
+    @apply font-bold text-lg
   }
 
   html {
@@ -69,5 +77,9 @@
   
   .arrow-animation {
     @apply rotate-180 fill-amber-700 !important
+  }
+
+  .footer-list ul {
+    @apply space-y-1
   }
 }
