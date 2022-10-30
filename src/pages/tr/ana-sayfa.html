@@ -99,35 +99,32 @@
   </main>
 
 
-  <footer class="flex flex-col items-center">
-    <section class="bg-amber-700 md:p-8 py-4 rounded-3xl w-4/5 z-30">
+  <footer class="flex flex-col items-center w-full">
+    <section class="z-30 w-full py-8 md:w-auto bg-amber-700 md:rounded-3xl">
       <div class="container">
-        <ul class="flex flex-col md:flex-row text-center items-center space-x-3 md:text-lg">
-          <li class="basis-2/3 mb-6">
-            <i class="fa-solid fa-globe text-2xl md:text-3xl mb-5"></i>
+        <ul class="flex flex-col items-center gap-6 text-sm text-center md:flex-row md:text-lg">
+          <li class="md:w-1/3">
+            <i class="mb-5 text-2xl fa-solid fa-globe md:text-3xl"></i>
             <p>Tekstil uzmanlarından giysiler ve ayakkabılar! <strong>MRHYA.com</strong>'u deneyin!</p>
           </li>
 
-          <li class="basis-2/3 mb-6 md:border-x-[1px]">
-            <i class="fa-solid fa-phone-flip text-2xl md:text-3xl mb-5"></i>
-            <p><a href="tel:+90 657 77 11 00">Destek: +90 657 77 11 00</a></p>
-            <p><a href="tel:+90 657 77 11 00">Sipariş: +90 657 77 11 00</a></p>
+          <li class="md:px-4 md:border-x-[1px] md:w-1/3">
+            <i class="mb-5 text-2xl fa-solid fa-phone-flip md:text-3xl"></i>
+            <a class="block" href="tel:+90 657 77 11 00">İletişim: +90 657 77 11 00</a>
           </li>
 
-          <li class="basis-2/3"> 
-            <i class="fa-solid fa-location-dot text-2xl md:text-3xl mb-5"></i>
-            <p>Adres: Şeker Mahallesi, Yankı Sokak, Tuzla/İstanbul</p>
+          <li class="md:w-1/3"> 
+            <i class="mb-5 text-2xl fa-solid fa-location-dot md:text-3xl"></i>
+            <address>Adres: Şeker Mahallesi, Yankı Sokak, Tuzla/İstanbul</address>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="bg-amber-500 w-full text-center md:-mt-14 mt-5">
-      <div class="container pt-10 md:pt-20 pb-7 text-sm md:text-base">
-        <ul>
-          <li>Copyright © 2022 | MRHYA Tekstil</li>
-          <li>Tüm hakları saklıdır.</li>
-        </ul>
+    <section class="w-full text-center bg-amber-500 md:-mt-14">
+      <div class="container py-8 text-sm md:pt-20 md:text-base">
+        <i class="block">Copyright © 2022 | MRHYA Tekstil</i>
+        <i>Tüm hakları saklıdır.</i>
       </div>
     </section>
   </footer>
@@ -135,8 +132,8 @@
      
 
   <!-- language button -->
-  <section class="fixed bottom-7 left-6 md:bottom-8 md:left-8 z-50">
-    <a class="px-4 py-2 rounded-xl md:text-lg text-md md:py-3 animation md:px-6 bg-amber-900 hover:bg-amber-500" href="../en/home-page.html">
+  <section class="fixed z-50 bottom-5 left-4 md:bottom-8 md:left-8">
+    <a class="px-4 py-2 text-sm rounded-xl md:text-lg md:py-3 animation md:px-6 bg-amber-900 hover:bg-amber-600" href="../en/home-page.html">
       EN
     </a>
   </section>
