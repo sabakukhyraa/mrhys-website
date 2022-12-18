@@ -9,6 +9,7 @@
   <title>Ana Sayfa</title>
 
   <link rel="stylesheet" href="../../../dist/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> <!--swiper.js-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--font-awesome icons-->
@@ -92,20 +93,41 @@
 
     <!-- Contents -->
     <!-- Swiper Slider -->
-    <div class="swiper h-screen w-full">
+    <div class="swiper h-screen w-full" 
+      style="--swiper-navigation-color:rgb(120 53 15);
+      --swiper-pagination-color:rgb(120 53 15)">
+
       <div class="swiper-wrapper">
 
-        <div class="swiper-slide pt-4 md:pt-8">
-          <h1 class="text-lg md:text-4xl">
-            En kaliteli ve en uygun giysiler <strong>MRHYA.com</strong>'da!
+        <div class="swiper-slide bg-slide-1 bg-cover opacity-90">
+          <h1 class="text-lg md:text-4xl p-40 text-center text-white">
+            En kaliteli ve en uygun giysiler MRHYA.com'da!
           </h1>
         </div>
 
-        <div class="swiper-slide">
-          <h2 class="text-lg md:text-4xl">Bizimle iletişime geçin!</h2>
+        <div class="swiper-slide bg-slide-2 bg-cover opacity-80 p-32 flex flex-col items-start gap-12">
+          <h2 class="text-lg md:text-4xl text-center text-white">
+            Daha fazla bilgi için bizimle iletişime geçin!
+          </h2>
+          <p class="md:text-lg text-md md:max-w-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, praesentium sequi! Ipsum id natus deleniti earum,
+            quis error? Dolore repellendus cupiditate aliquam debitis maxime
+            nisi quae rerum dolorem consequuntur! Veniam.
+          </p>
         </div>
 
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide bg-slide-3 bg-cover opacity-80 p-32 flex flex-col items-start gap-12">
+          <h2 class="text-lg md:text-4xl text-center text-white">
+            Doğru adrestediniz!
+          </h2>
+          <p class="md:text-lg text-md md:max-w-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, praesentium sequi! Ipsum id natus deleniti earum,
+            quis error? Dolore repellendus cupiditate aliquam debitis maxime
+            nisi quae rerum dolorem consequuntur! Veniam.
+          </p>
+        </div>
       </div>
       
       <div class="swiper-button-next"></div>
@@ -174,7 +196,9 @@
     }
   </script>
 
+  <!--Swiper-->
   <script type="module" src="../../js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   
   <!-- <script type="module" src="../../js/darkmode.js"></script> -->

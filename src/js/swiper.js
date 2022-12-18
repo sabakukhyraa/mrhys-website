@@ -1,24 +1,24 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 export const swiper = new Swiper(".swiper", {
-  modules: [Navigation, Pagination],
-
   slidesPerView: 1,
   spaceBetween: 0,
-  //freeMode: true,
+  loop: true,
+  speed: 700,
+
+  //parallax: true,
+  
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  }, 
 
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
   },
 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-
 });

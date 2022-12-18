@@ -15,6 +15,11 @@ module.exports = {
       "4xl": "2880px"
     },
     extend: {
+      backgroundImage: {
+        'slide-1' : "url('../src/images/slide1.jpg')",
+        'slide-2' : "url('../src/images/slide2.jpg')",
+        'slide-3' : "url('../src/images/slide3.jpg')"
+      },
       container: {
         center: true,
         padding: {
