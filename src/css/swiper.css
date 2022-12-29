@@ -1,0 +1,11 @@
+.swiper-slide {
+  backdrop-filter: blur(4px);
+}
+
+.swiper-slide h1,
+.swiper-slide h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255 255 255);
+}
