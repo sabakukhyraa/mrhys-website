@@ -4,8 +4,6 @@ export const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 700,
 
-  //parallax: true,
-
   autoplay: {
     delay: 3500,
     disableOnInteraction: false,
