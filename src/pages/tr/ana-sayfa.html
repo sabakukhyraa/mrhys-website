@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -89,7 +89,7 @@
       <!-- responsive navbar -->
       <nav
         id="mobile-navbar"
-        class="absolute w-full py-6 opacity-0 pointer-events-none md:hidden animation -top-40 bg-amber-500 z-50"
+        class="absolute z-50 w-full py-6 opacity-0 pointer-events-none md:hidden animation -top-40 bg-amber-500"
       >
         <ul class="flex flex-col items-center w-full gap-8">
           <li class="mobile-list-item active-mobile-list-item">
@@ -119,8 +119,12 @@
               <li class="dropdown-item"><a href="">Çocuk</a></li>
             </ul>
           </li>
-          <li class="mobile-list-item"><a href="./hakkımızda.html">Hakkımızda</a></li>
-          <li class="mobile-list-item"><a href="./iletisim.html">İletişim</a></li>
+          <li class="mobile-list-item">
+            <a href="./hakkımızda.html">Hakkımızda</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="./iletisim.html">İletişim</a>
+          </li>
         </ul>
       </nav>
 
@@ -128,12 +132,10 @@
       <!-- Swiper Slider -->
       <div
         class="w-full h-screen swiper"
-        style="
-          --swiper-pagination-color: rgb(120 53 15);
-        "
+        style="--swiper-pagination-color: rgb(120 53 15)"
       >
         <div class="swiper-wrapper">
-          <div class="bg-cover swiper-slide bg-slide-1 opacity-90 z-30">
+          <div class="z-30 bg-cover swiper-slide bg-slide-1 opacity-90">
             <h1 class="p-40 md:text-4xl">
               En kaliteli ve en uygun giysiler MRHYA.com'da!
             </h1>
@@ -156,9 +158,7 @@
           <div
             class="flex flex-col items-start gap-12 p-32 bg-cover swiper-slide bg-slide-3 opacity-80"
           >
-            <h2 class="md:text-4xl">
-              Doğru adrestediniz!
-            </h2>
+            <h2 class="md:text-4xl">Doğru adrestediniz!</h2>
             <p class="md:text-lg text-md md:max-w-sm">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Perspiciatis, praesentium sequi! Ipsum id natus deleniti earum,
@@ -169,6 +169,25 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      <section
+        class="container h-screen w-full my-10 md:my-32 space-y-6 md:space-y-20 md:!px-0"
+      >
+        <h1>MRHYA.com Lorem, ipsum dolor.</h1>
+
+        <div
+          class="flex flex-col items-center gap-6 p-10 shadow-lg md:items-start rounded-3xl bg-amber-500"
+        >
+          <h2 class="text-4xl font-bold text-white">Giysilerimize göz at!</h2>
+          <p class="text-center text-amber-50 md:text-start">
+            Biz tasarladık. Biz ürettik. Siz giyeceksiniz!
+          </p>
+          <button
+            class="px-4 py-2 rounded-lg md:self-end bg-amber-700 hover:scale-105 animation"
+          >
+            Göz at! 🡪
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="flex flex-col items-center w-full">
