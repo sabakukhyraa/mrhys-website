@@ -19,11 +19,6 @@
     text-align: center;
   }
 
-  .darkmode-layer,
-  .darkmode-toggle {
-    z-index: 500;
-  }
-
   h1,
   h2,
   h6 {
