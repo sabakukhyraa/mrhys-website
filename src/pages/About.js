@@ -4,6 +4,7 @@ export default function About() {
       <div className="flex flex-col gap-8 p-8 md:bg-amber-500 rounded-3xl md:shadow-2xl">
         <div className="flex items-center justify-between p-4 shadow-2xl bg-amber-600 rounded-2xl md:shadow-none md:p-6">
           <h3 className="text-xl md:text-2xl">Biz Kimiz?</h3>
+          <p>{'>>' /* users icon */}</p> 
         </div>
 
         <p className="px-2 text-base md:text-white text-amber-600">
