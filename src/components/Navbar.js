@@ -31,7 +31,7 @@ export default function Navbar() {
 
             <li
               className={`relative group list-item ${
-                location === "/clothes" ? "active-list-item" : ""
+                location === "/products" ? "active-list-item" : ""
               }`}
             >
               <Link to="/products">Clothes</Link>
