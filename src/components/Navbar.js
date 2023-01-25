@@ -130,14 +130,14 @@ export default function Navbar() {
           </li>
           <li
             className={`mobile-list-item ${
-              location === "/" ? "active-mobile-list-item" : ""
+              location === "/about" ? "active-mobile-list-item" : ""
             }`}
           >
             <Link to="/about">About</Link>
           </li>
           <li
             className={`mobile-list-item ${
-              location === "/" ? "active-mobile-list-item" : ""
+              location === "/contact" ? "active-mobile-list-item" : ""
             }`}
           >
             <Link to="/contact">Contact</Link>
