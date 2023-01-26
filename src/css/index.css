@@ -41,6 +41,22 @@
     @apply px-6 py-3 text-center w-full transition-all duration-300 ease-in-out rounded-xl bg-amber-700 hover:scale-105 hover:bg-amber-100 hover:text-amber-600;
   }
 
+  .search-button {
+    @apply base-button p-3 w-auto text-amber-50 hover:text-amber-50 hover:bg-amber-500;
+  }
+
+  .category {
+    @apply p-3 bg-amber-700 rounded-xl cursor-pointer text-amber-50 animation hover:scale-105;
+  }
+
+  .category-item {
+    @apply mt-2 animation duration-100 hover:font-bold;
+  }
+
+  .product-item {
+    @apply p-20 border-2 border-amber-700 text-center;
+  }
+
   .animation {
     @apply transition-all duration-300 ease-in-out;
   }
@@ -79,6 +95,10 @@
 
   .arrow-animation {
     @apply rotate-180 fill-amber-700 !important;
+  }
+
+  .sidebar-arrow-animation {
+    @apply rotate-180;
   }
 
   .footer-list ul {
