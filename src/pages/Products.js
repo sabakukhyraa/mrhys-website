@@ -5,11 +5,11 @@ export default function Products() {
 
   return (
     <section className="container min-h-screen my-10 text-amber-700">
-      <div className="grid grid-cols-3 items-start gap-14">
+      <div className="grid items-start grid-cols-3 gap-14">
 
-        <div className="md:col-start-3 col-span-3 p-3 flex gap-6">
+        <div className="flex col-span-3 gap-6 md:col-start-3">
           <input
-            className="p-3 w-full border-2 border-amber-700 rounded-xl"
+            className="w-full p-3 border-2 border-amber-700 rounded-xl outlinr-none"
             type="text" placeholder="Search a Product..."
           />
           <button
@@ -18,12 +18,12 @@ export default function Products() {
           </button>
         </div>
 
-        <ul className="col-span-1 p-6 md:flex flex-col hidden gap-4 md:text-xl text-base">
-          <li className="category" onClick={() => setIsDropdown(!isDropdown)}>
+        <ul className="flex-col hidden col-span-1 gap-4 text-base md:flex md:text-xl">
+          <li className="category" onClick={() => setIsDropdown(prev => !prev)}>
             CLOTHES
             <svg
-              width="34"
-              height="34"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               className={`${
@@ -33,8 +33,8 @@ export default function Products() {
             </svg>
 
             <ul className={`${
-                isDropdown && "active-mobile-dropdown"
-              } absolute mt-2 pl-2 space-y-3 opacity-0 pointer-events-none animation border-t-[1px]`}>
+                isDropdown ? "active-mobile-dropdown" : " !opacity-0 !h-0"
+              } mt-2 pl-2 space-y-3 pointer-events-none animation border-t-[1px] !transition-all`}>
               <li className="category-item">JEANS</li>
               <li className="category-item">T-SHIRTS</li>
               <li className="category-item">SKIRTS</li>
@@ -47,7 +47,7 @@ export default function Products() {
           <li className="category">PRICE</li>
         </ul>
 
-        <div className="md:col-span-2 col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 col-span-3 gap-8 md:col-span-2 md:grid-cols-3">
           <div className="product-item">1</div>
           <div className="product-item">2</div>
           <div className="product-item">3</div>
