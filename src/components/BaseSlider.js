@@ -6,7 +6,7 @@ import "../css/swiper.css";
 export default function BaseSlider() {
   return (
     <Swiper
-      className="w-full"
+      className="w-full shadow-2xl"
       spaceBetween={0}
       modules={[Pagination, Autoplay]}
       pagination={{ clickable: true }}
