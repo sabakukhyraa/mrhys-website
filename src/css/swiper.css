@@ -6,6 +6,7 @@
 }
 
 .swiper-slide {
+  height: 100%;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -14,8 +15,9 @@
   gap: 3rem;
   padding: 2rem;
   background-size: cover;
-  opacity: 80%;
-  /* backdrop-filter: opacity(0.8); */
+  background-position: center;
+  /* opacity: 20%; */
+  /* backdrop-filter: opacity(0.2); */
 }
 
 .swiper-slide img {
@@ -35,6 +37,7 @@
 
 .swiper-slide p {
   text-align: center;
+  color: white;
 }
 
 .swiper-pagination-bullets {
@@ -62,6 +65,7 @@
   .swiper-slide h1,
   .swiper-slide h2 {
     font-size: 32px;
+    text-align: start;
   }
   .swiper-slide {
     align-items: start;
