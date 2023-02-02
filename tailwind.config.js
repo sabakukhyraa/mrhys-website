@@ -51,6 +51,9 @@ module.exports = {
           500: "#03CEA4",
           700: "#079E7F",
         },
+        amber: {
+          150: "#fdeeb4"
+        },
         black: {
           700: "#565758",
         },
@@ -59,6 +62,9 @@ module.exports = {
           DEFAULT: "#ffffffcc",
         },
       },
+      boxShadow: {
+        '3xl': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',
+      }
     },
   },
   plugins: [],
