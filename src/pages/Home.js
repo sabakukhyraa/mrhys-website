@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <BaseSlider />
       <section
-        className="container min-h-screen w-full my-10 md:my-32 space-y-6 md:space-y-20 md:!px-0"
+        className="container min-h-screen w-full my-10 md:my-20 space-y-6 md:space-y-20 md:!px-0"
       >
         <h1>MRHYA.com Lorem, ipsum dolor.</h1>
 
