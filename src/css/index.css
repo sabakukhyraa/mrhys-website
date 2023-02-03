@@ -78,7 +78,7 @@
   }
 
   .active-mobile-dropdown {
-    @apply opacity-100 h-[235px] !important;
+    @apply static pointer-events-auto opacity-100 !important;
   }
 
   .active-list-item {

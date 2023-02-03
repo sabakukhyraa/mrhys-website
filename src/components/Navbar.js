@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import Icons from '../components/icons/Icons';
 
 export default function Navbar() {
   const location = useLocation().pathname;
@@ -71,14 +72,7 @@ export default function Navbar() {
           onClick={() => setIsNavbar(!isNavbar)}
           className="inline-block mr-8 sm:mr-16 md:hidden"
         >
-          <svg
-            width="28"
-            height="28"
-            className="fill-amber-700"
-            viewBox="0 0 20 20"
-          >
-            <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
-          </svg>
+          <Icons iconName={"menu"} />
         </button>
       </div>
       <nav
@@ -101,17 +95,12 @@ export default function Navbar() {
             onClick={() => setIsDropdown(!isDropdown)}
           >
             Clothes
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <Icons
+              iconName={"downArrow"}
               className={`${
                 isDropdown && "arrow-animation"
               } inline-block fill-amber-50 animation hover:fill-amber-900`}
-            >
-              <path d="M11.8079 14.7695L8.09346 10.3121C7.65924 9.79109 8.02976 9 8.70803 9L15.292 9C15.9702 9 16.3408 9.79108 15.9065 10.3121L12.1921 14.7695C12.0921 14.8895 11.9079 14.8895 11.8079 14.7695Z" />
-            </svg>
+            />
             <ul
               className={`${
                 isDropdown && "active-mobile-dropdown"

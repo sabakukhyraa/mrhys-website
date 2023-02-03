@@ -117,10 +117,21 @@ export default function Icons({ iconName, className }) {
     </svg>
   );
 
+  const menuIcon = (
+    <svg
+      className="fill-amber-700"
+      width="28"
+      height="28"
+      viewBox="0 0 20 20"
+    >
+      <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+    </svg>
+  );
+
   const DownArrowIcon = (
     <svg
-      width="24"
-      height="24"
+      width="36"
+      height="36"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -131,9 +142,10 @@ export default function Icons({ iconName, className }) {
 
   return (
     <>
+      {iconName === "web" && webIcon}
+      {iconName === "menu" && menuIcon}
       {iconName === "us" && aboutUsIcon}
       {iconName === "contact" && contactIcon}
-      {iconName === "web" && webIcon}
       {iconName === "location" && locationIcon}
       {iconName === "downArrow" && DownArrowIcon}
     </>
